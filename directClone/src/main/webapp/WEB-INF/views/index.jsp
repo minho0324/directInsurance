@@ -10,8 +10,10 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
 <script src="http://code.jquery.com/jquery-latest.js"></script>
-<style>
+<style type="text/css">
 
+
+	
 	html, body, div, span, applet, object, iframe,
 	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 	a, abbr, acronym, address, big, cite, code,
@@ -190,6 +192,13 @@
 		text-align:center;
 		margin: 0 auto;
 	}
+	
+	.formBox3_inner {
+	}
+	
+	.gender {
+		padding-top:10px;
+	}
 	#customerNm {
 		padding: 10px 10px;
 		width: 560px;
@@ -210,11 +219,6 @@
 		width: 560px;
 		margin-left:40px;
 		height: 80px;
-	}
-	.gender {
-		position:absolute;
-		top:880px;
-		left: 1150px;
 	}
 	
 	.btns {
@@ -415,7 +419,9 @@
 											<div class="formBox1">
 												<div class="formBox2">
 													<div class="formBox3 form-group">
-														<input class="form-control" type="text" id="customerNm" name="customerNm" placeholder="이름">
+														<div class="formBox3_inner">
+															<input class="form-control" type="text" id="customerNm" name="customerNm" placeholder="이름">
+														</div>
 														<div class="gender">
 															<input type="radio" name="gender" id="male" class="genderBox" value="1" checked>
 															<label class="genderlabel">남</label>
@@ -1819,6 +1825,31 @@
 				$('.popup_1').show();
 			}
 		})
+		
+		//생년월일 정규식
+		verifyDob = function() {
+			var birthVal = $('#customerBirthDay').val();
+			var regExp = /^(19[0-9][0-9]|20\d{2})(0[0-9]|1[0-2])(0[1-9]|[1-2][0-9]|3[0-1])$/;
+			if(birthVal.match(regExp) != null) {
+				
+			}else {
+				alert('생년월일을 올바르게 입력하세요!');
+				$('#customerBirthDay').focus();
+			}
+		}
+		
+		//전화번호 정규식
+		verifyPhone = function() {
+			var phoneVal = $('#customerPhone').val();
+			var regExp = /(^02.{0}|^01.{1}|[0-9]{3})([0-9]+)([0-9]{4})/;
+			if(phoneVal.match(regExp) != null) {
+				
+			}else {
+				alert('올바른 전화번호가 아닙니다!');
+				$('#customerPhone').focus();
+			}
+		}	
+		
 		$('#btn02').click(function() {
 			location.href="<c:url value='/direct/details1' />";
 		})

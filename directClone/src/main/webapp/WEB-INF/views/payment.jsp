@@ -180,7 +180,11 @@
 		})
 		
 		$('.next').click(function () {
-			alert("결제완료!");
+			if(($('#card1').val() != '' && $('#card2').val() != '' && $('#card3').val() != '' && $('#card4').val() != '') || $('#bank_num').val() != '') {
+				alert('알맞은 결제정보를 입력하세요!');
+			}else {
+				alert("결제완료!");
+			}
 		})
 		
 		$('.chkCard').on("click", function() { 
