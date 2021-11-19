@@ -1,0 +1,242 @@
+@charset "UTF-8";
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+
+	/* 헤더 && 컨테이너 */
+	.title a img {
+		padding:10px;
+		float:left;
+		margin-left:200px;
+	}
+	
+	.header .progress_bar {
+		margin: 0 auto;
+		text-align:center;
+		dispay:inline;
+		padding-top:20px;
+		padding-left:300px;
+		margin-bottom:70px;
+		margin-right:300px;
+	}
+	
+	.progress_bar_inner {
+		margin:0 auto;
+		font-weight:bold;
+		background: #ff8911;
+		color:white;
+		border-radius:5px;
+		width:250px;
+		text-align:center;
+		height:35px;
+	}
+	
+	.progress_bar_inner p {
+		padding:10px 5px;
+	}	
+	
+	.container {
+		margin:0 auto;
+		text-align:center;
+		display:block;
+		width:820px;
+		height:100%;
+	}	
+
+	/* 이전결제버튼 */
+	.progress_btn {
+		margin:50px 0;
+		text-align:center;
+	}
+	
+	/* 카드/계좌 선택 */
+	.paymentMethod_select {
+		padding:30px 0;
+	}
+	
+	.paymentMethod_select span {
+		text-align:center;
+		font-size: 30px;
+	}
+	
+	.paymentMethod {
+		border:2px solid #e0eced;
+		margin-bottom:30px;	
+		line-height:20px;
+		padding: 20px 120px 0px 120px;
+		text-align:center;
+	}
+	.chkCard {
+		border:2px solid #e0eced;
+		margin-bottom:30px;	
+		line-height:20px;
+		padding: 20px 120px 0px 120px;
+		text-align:center;
+	}
+	.chkCard::hover {
+		cursor:pointer;
+	}
+	
+	.chkCard h2 {
+		padding-bottom:20px;
+	}
+	
+	.cash {
+		border:2px solid #e0eced;
+		margin-bottom:40px;	
+		line-height:20px;
+		padding: 20px 120px 0px 120px;
+		text-align:center;
+	}
+	
+	.cash h2 {
+		padding-bottom:20px;
+	}
+	
+	/* 결제금액 창 */
+	.amountChk_form {
+		border:2px solid #e0eced;
+		margin-bottom:30px;	
+		line-height:20px;
+		padding: 30px 120px 0px 120px;
+		text-align:center;
+	}
+	
+	.amountChk h2 {
+		display:inline;
+		text-align:left;
+		font-size:30px;
+	}
+	.amountChk .amount {
+		display:inline;
+		text-align:right;
+	}
+	.amountChk .amount span {
+		color:#FF0000;
+		padding-left:250px;
+		font-size:30px;
+	}
+	.detailChk {
+		padding-top:20px;
+		padding-bottom:20px;
+		text-align:left;
+	}
+	
+	.name {
+		
+	}
+	
+	.name span {
+		color:#1A703F;
+		font-weight:bold;		
+	}
+	
+	/* 카드결제 시 */
+	.payment {
+		width:100%;
+		margin:0 auto;
+		background:#f4f4f4;
+		text-align:left;
+		padding: 20px 30px 20px 20px;
+		margin-bottom:40px;
+	}
+	
+	.card_actual {
+		margin-bottom:15px;
+	}
+	
+	.insert_card_num {
+		float:left;
+		padding-bottom:20px;
+	}
+	.card_info {
+		
+	}
+	
+	.card {
+		display:inline-block;
+		width:20%;
+	}
+	
+	.month_select {
+		width:75px;
+	}
+	
+	.year_select {
+		width:75px;
+	}
+
+	.validate_actual {
+		margin-bottom:15px;
+	}
+	.month {
+		display:inline-block;
+	}
+	.year {
+		display:inline-block;
+	}
+	
+	.clicked {
+		background:#E5FFCC;
+	}
+	
+	/* 계좌이체 시 */
+	.bank_info {
+		display:none;
+	}
+	
+	.account_info .bank {
+		display:inline-block;
+		padding-bottom:15px;
+	}
+	.account_info .account {
+		display:inline-block;
+		padding-left:200px;
+		padding-bottom:15px;
+	}
+	
+	.bank_info_detail .bank_name {
+		display:inline-block;
+	}
+	
+	.bank_info_detail .bank_num {
+		display:inline-block;
+		padding-left:120px;
+	}

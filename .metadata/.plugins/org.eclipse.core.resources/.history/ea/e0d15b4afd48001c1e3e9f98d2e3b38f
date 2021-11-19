@@ -1,0 +1,213 @@
+@charset "UTF-8";
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+
+	/* 헤더 && 컨테이너 */
+	.title a img {
+		padding:10px;
+		float:left;
+		margin-left:200px;
+	}
+	
+	.header .progress_bar {
+		margin: 0 auto;
+		text-align:center;
+		dispay:inline;
+		padding-top:30px;
+		margin-bottom:70px;
+		margin-right:300px;
+	}
+	.progress_bar_inner {
+		margin:0 auto;
+		font-weight:bold;
+		background: #ff8911;
+		color:white;
+		border-radius:5px;
+		width:250px;
+		text-align:center;
+		height:35px;
+	}
+	
+	.progress_bar_inner p {
+		padding:10px 5px;
+	}	
+
+	
+	.container {
+		margin:0 auto;
+		text-align:center;
+		display:block;
+		width:820px;
+		height:100%;
+	}
+	
+	/* 이전다음버튼 */
+	.progress_btn {
+		margin:50px 0;
+		text-align:center;
+	}
+	
+	/* 상품 내용 */
+	.ref {
+		border:2px solid #e0eced;
+		margin-bottom:30px;	
+		line-height:20px;
+	}
+	
+	.ref h1 {
+		text-align:center;
+		color:#5cb85c;
+		font-size:20px;
+		font-weight:bold;
+	}
+	
+	.ref_inner {
+		padding: 20px 120px 0px 120px;
+		text-align:left;	
+	}
+	
+	.listform {
+		margin:30px 0;
+		line-height:30px;
+		text-align:center;
+	}
+	
+	.list li {
+		display:inline;
+	}
+	
+	.table {
+		text-align:center;
+	}
+	
+	.table tbody tr td:first-child {
+		font-weight:bold;
+	}
+	
+	/* 보장내용 */
+	.insu_title_inner {
+		border:2px solid #e0eced;
+		margin-bottom:30px;	
+		line-height:20px;
+		padding: 20px 120px 0px 120px;
+		text-align:left;
+	}
+	
+	.insu_detail h2 {
+		text-align:center;
+		color:#5cb85c;
+		font-size:20px;
+		font-weight:bold;
+	}
+	.insu_form {
+		margin:30px 0;
+		line-height:30px;
+		text-align:center;
+	}
+	
+	/* 약관 링크 */
+	.terms_inner {
+		border:2px solid #e0eced;
+		margin-bottom:30px;	
+		line-height:20px;
+		padding: 20px 120px 0px 120px;
+		text-align:center;
+		background:#f4f4f4;
+	}
+	
+	.terms_inner p:first-child {
+		font-weight:bold;
+		font-size:20px;
+		padding-bottom:10px;
+		
+	}
+	.terms_inner p:nth-child(2) {
+		color:#FF0000;
+		padding-top:10px;
+	}
+	
+	.termLink {
+		margin:30px;
+	}
+	
+	/* 최종동의3 */
+	.termChk {
+		margin-top:30px;
+		border:2px solid #e0eced;
+		margin-bottom:30px;	
+		line-height:20px;
+		background:#f4f4f4;
+	}
+	
+	.termChk_form {
+		padding:30px 0;
+		font-weight:bold;
+	}
+	
+	.ChkFirst {
+		padding-top:10px;
+		
+	}
+	
+	.ChkFirst ul, label {
+		display:inline-block;
+		padding-bottom: 20px;
+	}
+	
+	.ChkFirst label {
+		padding-left:30px;
+		text-align:right;
+	}
+	
+	.ChkSecond ul, label {
+		display:inline-block;
+	}
+	
+	.ChkSecond label {
+		padding-left:30px;
+		text-align:right;
+	}	
+	.clicked {
+		background:#E5FFCC;
+	}
+	
+	.term1, .term2 {
+		text-decoration-line:none;
+	}

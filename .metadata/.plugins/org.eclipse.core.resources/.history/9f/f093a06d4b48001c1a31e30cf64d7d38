@@ -1,0 +1,382 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core"  prefix="c"%>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>details2</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<style>
+	
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+
+	/* 헤더 && 컨테이너 */
+	.title a img {
+		padding:10px;
+		float:left;
+		margin-left:200px;
+	}
+	
+	.header .progress_bar {
+		margin: 0 auto;
+		text-align:center;
+		dispay:inline;
+		padding-top:30px;
+		margin-bottom:70px;
+		margin-right:300px;
+	}
+	
+	.header .progress_bar span {
+		font-weight:bold;
+		background: #ff8911;
+		color:white;
+		border-radius:5px;
+		width:250px;
+	}
+	
+	.container {
+		margin:0 auto;
+		text-align:center;
+		display:block;
+		width:820px;
+		height:100%;
+	}
+	
+	/* 이전다음버튼 */
+	.progress_btn {
+		margin:50px 0;
+		text-align:center;
+	}
+	
+	/* 상품 내용 */
+	.ref {
+		border:2px solid #e0eced;
+		margin-bottom:30px;	
+		line-height:20px;
+	}
+	
+	.ref h1 {
+		text-align:center;
+		color:#5cb85c;
+		font-size:20px;
+		font-weight:bold;
+	}
+	
+	.ref_inner {
+		padding: 20px 120px 0px 120px;
+		text-align:left;	
+	}
+	
+	.listform {
+		margin:30px 0;
+		line-height:30px;
+		text-align:center;
+	}
+	
+	.list li {
+		display:inline;
+	}
+	
+	.table {
+		text-align:center;
+	}
+	
+	.table tbody tr td:first-child {
+		font-weight:bold;
+	}
+	
+	/* 보장내용 */
+	.insu_title_inner {
+		border:2px solid #e0eced;
+		margin-bottom:30px;	
+		line-height:20px;
+		padding: 20px 120px 0px 120px;
+		text-align:left;
+	}
+	
+	.insu_detail h2 {
+		text-align:center;
+		color:#5cb85c;
+		font-size:20px;
+		font-weight:bold;
+	}
+	.insu_form {
+		margin:30px 0;
+		line-height:30px;
+		text-align:center;
+	}
+	
+	/* 약관 링크 */
+	.terms_inner {
+		border:2px solid #e0eced;
+		margin-bottom:30px;	
+		line-height:20px;
+		padding: 20px 120px 0px 120px;
+		text-align:center;
+		background:#f4f4f4;
+	}
+	
+	.terms_inner p:first-child {
+		font-weight:bold;
+		font-size:20px;
+		padding-bottom:10px;
+		
+	}
+	.terms_inner p:nth-child(2) {
+		color:#FF0000;
+		padding-top:10px;
+	}
+	
+	.termLink {
+		margin:30px;
+	}
+	
+	/* 최종동의3 */
+	.termChk {
+		margin-top:30px;
+		border:2px solid #e0eced;
+		margin-bottom:30px;	
+		line-height:20px;
+		background:#f4f4f4;
+	}
+	
+	.termChk_form {
+		padding:30px 0;
+		font-weight:bold;
+	}
+	
+	.ChkFirst {
+		padding-top:10px;
+		
+	}
+	
+	.ChkFirst ul, label {
+		display:inline-block;
+		padding-bottom: 20px;
+	}
+	
+	.ChkFirst label {
+		padding-left:30px;
+	}
+	
+	.ChkSecond ul, label {
+		display:inline-block;
+	}
+	
+	.ChkSecond label {
+		
+	}	
+	
+	
+	
+</style>
+<body>
+	
+	<!-- 헤더 -->
+	<div class="headerform">
+		<div class="header">
+			<div class="title">
+				<a href="index.jsp">
+					<img src="../resources/img/logo02.png">
+				</a>
+				<div class="progress_bar">
+					<span>1. 상세 정보 입력 및 동의</span>
+				</div>
+			</div>
+		</div>
+	
+		<a href="<c:url value='/direct/index.jsp' />" class="btn_close"></a>
+	</div>
+	<!-- 헤더 끝 -->
+	
+	<div class="container">
+		<div class="rows">
+			<div class="refform">
+				<div class="ref">
+					<div class="ref_inner">
+						<h1>DB손해보험 다이렉트 운전자보험</h1>
+						<div class="listform">	
+							<table class="table">
+								<tbody>
+									<tr>
+										<td>피보험자/계약자</td>
+										<td>한*호/한*호</td>
+									</tr>
+									<tr>
+										<td>직업</td>
+										<td>프로그래머</td>
+									</tr>
+									<tr>
+										<td>조회된 보험료</td>
+										<td>20,000원</td>
+									</tr>
+									<tr>
+										<td>보험기간</td>
+										<td>2021.11.16 ~ 2022.11.15</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="insu_info">
+				<div class="insu_title">
+					<div class="insu_title_inner">
+						<div class="insu_detail">
+							<h2>보장내용</h2>
+								<div class="insu_form">	
+									<table class="table">
+										<tbody>
+											<tr>
+												<td>교통상해후유장해</td>
+												<td>100만원</td>
+											</tr>
+											<tr>
+												<td>자동차사고벌금1</td>
+												<td>1000만원</td>
+											</tr>
+											<tr>
+												<td>자동차사고벌금2</td>
+												<td>2000만원</td>
+											</tr>
+											<tr>
+												<td>변호사선임료</td>
+												<td>2000만원</td>
+											</tr>
+											<tr>
+												<td>교통상해사망</td>
+												<td>12,000만원</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+					</div>	
+					
+					<div class="terms">
+						<div class="terms_form">
+							<div class="terms_inner">
+								<p>보험 청약일 | 2021년 11월 16일</p>
+								<p>위 청약 내용은 보험 계약의 기본 사항만을 요약한 것으로<br> 자세한 사항은 아래 버튼을 눌러 확인해주세요.</p>
+								
+								<div class="termLink">
+								<hr>
+									<div class="term1">
+										<a href="https://www.directdb.co.kr/common/rd/view.do">
+											<button type="button" class="btn btn-default btn-lg btn-block">상품설명서</button>
+										</a>
+									</div>
+								<hr>
+									<div class="term2">
+										<a href="https://www.directdb.co.kr/doc/pdf/terms/ltm_direct_driver2108.pdf">
+											<button type="button" class="btn btn-default btn-lg btn-block">보험약관</button>
+										</a>
+									</div>
+								<hr>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					
+					<div class="termChk">
+						<div class="termChk_form">
+							<div class="termChk_inner">
+							
+								<div class="ChkFirst">
+									<ul>
+										<li>본인이 가입하는 금융 상품의 예금자 ~~~ 확인합니다.</li>
+									</ul>
+									<label for="termChk1">
+										<input type="checkbox" name="termChk1" value="Y">
+										확인
+									</label>
+								</div>
+								
+								<div class="ChkSecond">
+									<ul>
+										<li>가입하려는 ~~~ 내용을 잘 확인했습니다.</li>
+									</ul>
+									<label for="termChk1">
+										<input type="checkbox" name="termChk1" value="Y">
+										확인
+									</label>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<div class="progress_btn">
+			<button class="prev btn btn-danger">이전</button>
+			<button class="next btn btn-warning">다음</button>
+		</div>
+
+<script>
+
+	$(function() {
+		$('.prev').click(function () {
+			location.href="<c:url value='/direct/details1' />";
+			
+		})
+		$('.next').click(function () {
+			location.href="<c:url value='/direct/payment' />";
+		})
+	});
+</script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+

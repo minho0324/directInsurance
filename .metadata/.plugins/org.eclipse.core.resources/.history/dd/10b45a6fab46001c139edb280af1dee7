@@ -1,0 +1,14 @@
+package com.direct.mydirect.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+
+import com.direct.mydirect.vo.vo;
+
+@Controller
+public class directController {
+	
+	
+	private int calculate(Model model, vo vo)
+	
+}

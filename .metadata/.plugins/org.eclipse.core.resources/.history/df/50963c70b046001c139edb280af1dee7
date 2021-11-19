@@ -1,0 +1,11 @@
+package com.direct.mydirect.vo;
+
+
+public class directVO {
+	
+	private String customerNm;
+	private String customerBirthDay;
+	private String customerPhone;
+
+	
+}

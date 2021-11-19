@@ -1,0 +1,183 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>details</title>
+</head>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<style>
+	
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+	
+	ul li {list-style:none; }
+	.fl {float:left; }
+	.tc {text-align:center; }
+	
+	.board {width: 950px; }
+	.w70 {width:70px; }
+	.w500 {width:500px; }
+	.w120 {width:120px; }
+	.w100 {width:100px; }
+	
+	.title {
+	height: 50px;
+	line-height: 50px;
+	background:white;
+	font-weight: bold;
+	}
+	.t_line {border-right:solid 1px gray;}
+	.lt_line {border-bottom:solid 1px gray;}
+	.list {
+		height: 40px;
+		line-height: 40px;
+		background: #f3f3f3;
+	}
+
+</style>
+<body>
+	
+	<div class="wrap_sub" id="wrap">
+		<!-- 헤더 -->
+		<div id="header">
+			<h1>
+				<a href="index.jsp">
+					<img src="../resources/img/logo02.png">
+				</a>
+			</h1>
+		</div>
+		<!-- 진행 바 -->
+		<div class="wrap_calc_process">
+			<ol class="calc_preocess clfix">
+				<li>
+					<strong>1. 고객정보</strong>
+				</li>
+				<li>
+					<strong>2. 보험료 확인하기</strong>
+				</li>
+				<li>
+					<strong>3. 피보험자/계약자 정보</strong>
+				</li>
+				<li>
+					<strong>4. 청약내용 확인</strong>
+				</li>
+				<li>
+					<strong>5. 보험료 결제</strong>
+				</li>
+			</ol>
+		</div>
+		<!-- 진행바 끝 -->
+		<a href="<c:url value='/direct/index.jsp' />" class="btn_close"></a>
+		<!-- 헤더 끝 -->
+		
+		<!-- 컨테이너 본문 시작 -->
+		<div id="container" class="clfix">
+			<!-- 왼쪽 바 -->
+			<div id="lbn">
+				<h2>
+					<img alt="" src="../resources/img/txt_left_h2.png">
+				</h2>
+				<ol class="process_step">
+					<li>
+						<p class="step_tt1">1. 고객정보</p>
+						<ul>
+							<li>홍길동(900100-*******)</li>
+						</ul>
+						<ul>
+							<li>운전형태: 자가용</li>
+						</ul>
+					</li>
+					<li>
+						<p class="step_tt1">2. 보험료 확인하기</p>
+					</li>
+					<li>
+						<p class="step_tt1">3. 피보험자/계약자 정보</p>
+					</li>
+					<li>
+						<p class="step_tt1">4. 청약내용 확인</p>
+					</li>
+					<li>
+						<p class="step_tt1">5. 보험료 결제</p>
+					</li>
+				</ol>
+			</div>
+			<div id="contents">
+				<h1>플랜과 보험기간, 납입기간, 납입주기를 선택해주세요.</h1>
+				<ul class="board">
+					<li class="fl tc w120 title t_line">보장내용</li>
+					<li class="fl tc w70 title t_line">실속형 &nbsp;&nbsp; 20,000원</li>
+				</ul>
+				
+			</div>
+		</div>
+		<!-- 컨테이너 끝 -->
+		
+		<!-- 사이드바 시작 -->
+		<div id="wrap_quick_v2">
+			
+		</div>
+		<!-- 사이드바 끝 -->
+	</div>
+	
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

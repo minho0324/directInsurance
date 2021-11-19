@@ -1,0 +1,181 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+	
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+	
+	
+		
+	.nav {
+		position: fixed;
+		background: white;
+		border-bottom-color: #D4D4D4;
+		border-bottom-width: 2px;
+		border-bottom-style: solid;
+		padding-bottom:10px;
+	}
+	.nav .logo h3 a {
+		font-weight: bold;
+	}
+	.logo h3 {
+		padding-top: 10px;
+	}
+	a,li,ul {
+		text-decoration: none;
+	}
+	.phoneNum {
+		margin-left: 1550px;
+		font-weight: bold;
+	}
+	.content {
+		max-width:720px;
+		text-align:center;
+		margin:0 auto;
+		
+	}
+	.topbanner1 {
+		padding-top:100px;
+	}
+	ul {
+		text-align: center;
+		list-style: none;
+		color: #D4D4D4;
+	}
+	ul li {
+		display: inline;
+		color: #D4D4D4;
+	}
+	.outline {
+		margin: 0 auto;
+		border-top-color: #D4D4D4;
+		border-top-width: 2px;
+		border-top-style: solid;
+		border-bottom-color: #D4D4D4;
+		border-bottom-width: 2px;
+		border-bottom-style: solid;
+		text-align: center;
+		width: 720px;
+	}
+	.outline .notice li {
+		font-size: 16px;
+	}
+	
+	ul {
+		padding-top:10px;
+		padding-bottom:10px;
+	}
+	.footer {
+		padding: 20px;
+		color: #3D3D3D;
+		background: #D4D4D4;
+		text-align: center;
+	}
+	.consult {
+		display: inline;
+	}
+	
+</style>
+<body>
+	<div class="row">
+		<header class="nav">
+			<div class="logo">
+				<h3>
+					<a href="#" style="text-decoration: none; color:black;">
+						<img alt="" src="resources/img/logo_img.png">
+						당근 자동차보험
+					</a>
+					<span class="phoneNum">010-1234-5678</span>
+				</h3>
+			</div>	
+		</header>
+	</div>
+	
+		<section class="content">
+			<div class="topbanner1">
+				<img alt="" src="resources/img/topbanner1.jpg">
+			</div>
+			<div class="topEventBanner">
+				<img alt="" src="resources/img/topEventBanner.png">
+			</div>
+			<div class="info1">
+				<img alt="" src="resources/img/info1.jpg">
+			</div>
+			<div class="info2_2">
+				<img alt="" src="resources/img/info2-2.jpg">
+			</div>
+			<div class="event3">
+				<img alt="" src="resources/img/event_3.jpg">
+			</div>
+		</section>
+	
+	<div class="outline">
+		<ul class="notice">
+			<li><a href="#">가입안내</a></li>
+			<li><a href="#">보장내용</a></li>
+			<li><a href="#">가입예시</a></li>
+			<li><a href="#">꼭알아두실사항</a></li>
+		</ul>
+	</div>
+	
+	<footer class="footer">
+		DB손해보험 대표이사 김정남 사업자등록번호 201-81-45593
+		<br>
+		(주)DB손해보험 서울시 강남구 테헤란로 432(대치동DB금융센터)(우)06194
+		<br>
+		COPYRIGHTS 2018 DB INSURANCE.CO.LTD. ALL RIGHTS RESERVED
+	</footer>
+		<div class="join">
+			<div class="calculate">내 보험료 계산</div>
+			<div class="consult">무료상담 신청</div>
+		</div>
+</body>
+</html>

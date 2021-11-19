@@ -1,0 +1,20 @@
+package com.direct.mydirect.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Service;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.direct.mydirect.vo.vo;
+
+@Controller
+@RequestMapping("/direct")
+public class directController {	
+	
+	@RequestMapping("/calculate")
+	private String calculate(Model model, vo vo) {
+		
+		return "";
+	}
+	
+}

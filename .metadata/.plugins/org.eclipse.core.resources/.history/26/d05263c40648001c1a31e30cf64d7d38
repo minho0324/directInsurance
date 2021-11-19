@@ -1,0 +1,21 @@
+package com.direct.mydirect.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.direct.mydirect.vo.directVO;
+
+@Controller
+@RequestMapping("/direct")
+public class directController {	
+	
+	
+	
+	@RequestMapping("/details")
+	private String terms(Model model, directVO vo) {
+		System.out.println("상세페이지 이동");
+		return "details";
+	}
+	
+}

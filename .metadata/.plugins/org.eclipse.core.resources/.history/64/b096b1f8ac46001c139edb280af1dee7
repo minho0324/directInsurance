@@ -1,0 +1,10 @@
+package com.direct.mydirect.vo;
+
+public class directVO {
+	
+	private String name;
+	private String birth;
+	private String phone;
+
+	
+}

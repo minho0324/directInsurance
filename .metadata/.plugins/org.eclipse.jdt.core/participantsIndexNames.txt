@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+C:\Users\i\Desktop\다이렉트\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\184283405.index
+\directClone\src\main\java
+C:\Users\i\Desktop\다이렉트\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2288418038.index
+\directClone\src\main\java

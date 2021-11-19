@@ -1,0 +1,263 @@
+@charset "UTF-8";
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	
+	/* 헤더 && 컨테이너 */
+	.title a img {
+		padding:10px;
+		float:left;
+		margin-left:200px;
+	}
+	
+	.header .progress_bar {
+		margin: 0 auto;
+		text-align:center;
+		dispay:inline;
+		padding-top:30px;
+		margin-bottom:70px;
+		margin-right:300px;
+	}
+	.progress_bar_inner {
+		margin:0 auto;
+		font-weight:bold;
+		background: #ff8911;
+		color:white;
+		border-radius:5px;
+		width:250px;
+		text-align:center;
+		height:35px;
+	}
+	
+	.progress_bar_inner p {
+		padding:5px;
+	}
+
+	
+	.container {
+		margin:0 auto;
+		text-align:center;
+		display:block;
+		width:820px;
+		height:100%;
+	}
+	
+	/* 이메일,주소 */
+	.phone_mail {
+		border:2px solid #e0eced;
+		margin-top:100px;
+		margin-bottom:30px;
+	}
+	
+	.phone_mail_inner {
+		text-align:left;
+		padding:40px 0;
+		margin-left:50px;
+	}
+	
+	.mailform {
+		padding: 20px;
+	}
+	
+	.mailform h3 {
+		padding-bottom:20px;
+	}
+	.addrform {
+		padding: 20px;
+	}
+	.addrform h3 {
+		padding-bottom:20px;
+	}
+	
+	.form-control {
+		width:360px;
+	}
+	.mailform h3 span {
+		color:#FF0000;
+	}
+	.addrform h3 span {
+		color:#FF0000;
+	}
+	
+	.addr {
+		margin-bottom: 10px;
+		padding-bottom:10px;
+	}
+	
+	/* 약관수령방법 */
+	.receiving {
+		border:2px solid #e0eced;
+		margin-bottom:30px;
+	}
+	.receiving_inner {
+		text-align:left;
+		padding:40px 0;
+		margin-left:50px;
+	}
+	.receiving_inner h3 {
+		margin-bottom:10px;
+	}
+	
+	.receiving_inner label {
+		margin-right:10px;
+	}
+	
+	/* 본인확인 */
+	.identification {
+		border:2px solid #e0eced;
+		margin-bottom:30px;
+	}
+	.identification_inner {
+		text-align:left;
+		padding:40px 0;
+		margin-left:50px;
+	}
+	
+	.identification_inner h3 {
+		margin-bottom:10px;
+	}
+	
+	.identification_inner label {
+		margin-right:10px;
+	}
+	
+	/* 오토바이 타냐? */
+	.motorcycle {
+		border:2px solid #e0eced;
+		margin-bottom:30px;
+	}
+	.motorcycle_inner {
+		text-align:left;
+		padding:40px 0;
+		margin-left:50px;
+	}
+	
+	.motorcycle_inner h3 {
+		margin-bottom:10px;
+	}
+	
+	.motorcycle_inner label {
+		margin-right:10px;
+	}
+	
+	/* 개인 이동장치 */
+	.pv {
+		border:2px solid #e0eced;
+		margin-bottom:30px;
+	}
+	.pv_inner {
+		text-align:left;
+		padding:40px 0;
+		margin-left:50px;
+	}
+	
+	.pv_inner h3 {
+		margin-bottom:10px;
+	}
+	
+	.pv_inner label {
+		margin-right:10px;
+	}
+	.pv_detail h3 {
+		line-height:25px;
+	}
+	
+	/* 최종동의 */
+	.agreement {
+		border:2px solid #e0eced;
+		margin-bottom:30px;
+		background:#f4f4f4;
+	}
+	.agreement_inner {
+		text-align:left;
+		padding:40px 0;
+		margin-left:50px;
+	}
+	
+	.agreement_inner h3 {
+		margin-bottom:20px;
+		font-weight:bold;
+		line-height:25px;
+	}
+	
+	.agreement_inner label {
+		margin-right:10px;
+	}
+	
+	/* 최종동의2 */
+	.finalagree {
+		border:2px solid #e0eced;
+		line-height:20px;
+		height:250px;
+		font-size:15px;
+		background:#f4f4f4;
+	}
+	.finalagree_inner {
+		text-align:left;
+		padding:30px 0 40px 0;
+		margin-left:50px;
+	}
+	
+	.finalagree_inner h3 {
+		margin-bottom:10px;
+		font-weight:bold;
+		line-height:25px;
+	}
+	
+	.finalagree_inner label {
+		margin-right:10px;
+	}
+	
+	.finalagree_inner p {
+		padding: 10px 0 30px 0;
+		margin-bottom:20px;
+		line-height:25px;
+	}
+	
+	.finalagree span {
+		color:#1A703F;
+		font-weight:bold;
+	}
+	
+	/* 이전다음버튼 */
+	.progress_btn {
+		margin:50px 0;
+		text-align:center;
+	}
+	
