@@ -113,14 +113,14 @@
 								<hr>
 									<div class="term1">
 										<a href="https://www.directdb.co.kr/common/rd/view.do" target="_blank">
-											<div type="button" class="btn1 btn-default btn-lg btn-block">상품설명서</div>
+											<div class="btn1 btn-default btn-lg btn-block">상품설명서</div>
 										</a>
 										
 									</div>
 								<hr>
 									<div class="term2">
 										<a href="https://www.directdb.co.kr/doc/pdf/terms/ltm_direct_driver2108.pdf" target="_blank">
-											<div type="button" class="btn2 btn-default btn-lg btn-block">보험약관</div>
+											<div class="btn2 btn-default btn-lg btn-block">보험약관</div>
 										</a>
 									</div>
 								<hr>

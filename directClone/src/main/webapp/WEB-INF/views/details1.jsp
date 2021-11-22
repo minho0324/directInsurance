@@ -11,7 +11,6 @@
 <link rel="stylesheet" href="../resources/css/details1.css" >
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 
-
 <body>
 	
 	<!-- 헤더 -->
@@ -167,7 +166,7 @@
 			
 			$('.next').click(function () {
 				if($('#email').val() === '' || $('#addr').val() === '') {
-					alert("이메일과 주소는 필수값입니다.");
+					alert("이메일과 기본주소값은 필수값입니다.");
 					verifyEmail();
 				}else if(
 					($('#receiving_email').is(':checked') || $('#receiving_post').is(':checked')) && $('#identification').is(':checked') && $('#motorcycle').is(':checked')
@@ -191,6 +190,7 @@
 				  }
 				  else {
 				    alert('메일 주소 양식이 맞지 않습니다.');
+				    return;
 				  }
 				};
 			
