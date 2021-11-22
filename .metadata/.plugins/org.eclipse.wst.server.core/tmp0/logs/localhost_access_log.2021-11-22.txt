@@ -26,3 +26,13 @@
 0:0:0:0:0:0:0:1 - - [22/Nov/2021:09:05:31 +0900] "GET /mydirect/ HTTP/1.1" 200 8206
 0:0:0:0:0:0:0:1 - - [22/Nov/2021:09:05:31 +0900] "GET /mydirect/ HTTP/1.1" 200 96179
 0:0:0:0:0:0:0:1 - - [22/Nov/2021:09:05:31 +0900] "GET /mydirect/ HTTP/1.1" 200 96179
+127.0.0.1 - - [22/Nov/2021:09:06:52 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [22/Nov/2021:09:06:53 +0900] "GET /mydirect/ HTTP/1.1" 200 83944
+0:0:0:0:0:0:0:1 - - [22/Nov/2021:09:06:53 +0900] "GET /mydirect/resources/css/index.css HTTP/1.1" 200 12266
+0:0:0:0:0:0:0:1 - - [22/Nov/2021:09:07:00 +0900] "GET /mydirect/ HTTP/1.1" 200 83944
+0:0:0:0:0:0:0:1 - - [22/Nov/2021:09:07:20 +0900] "GET /mydirect/direct/details1 HTTP/1.1" 200 6876
+0:0:0:0:0:0:0:1 - - [22/Nov/2021:09:07:20 +0900] "GET /mydirect/resources/css/details1.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [22/Nov/2021:09:07:31 +0900] "GET /mydirect/direct/details2 HTTP/1.1" 200 5142
+0:0:0:0:0:0:0:1 - - [22/Nov/2021:09:07:31 +0900] "GET /mydirect/resources/css/details2.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [22/Nov/2021:09:08:12 +0900] "GET /mydirect/direct/payment HTTP/1.1" 200 7057
+0:0:0:0:0:0:0:1 - - [22/Nov/2021:09:08:12 +0900] "GET /mydirect/resources/css/payment.css HTTP/1.1" 304 -
