@@ -20,7 +20,6 @@ public class directController {
 	private String detail1(Model model, directVO vo) {
 		System.out.println("details1∑Œ ¿Ãµø");
 		model.addAttribute("userInfo" , vo);
-//		System.out.println(vo);
 		return "details1";
 	}
 	

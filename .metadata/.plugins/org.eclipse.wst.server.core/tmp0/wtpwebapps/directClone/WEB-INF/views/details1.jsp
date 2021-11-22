@@ -20,7 +20,7 @@
 				<a href="<c:url value='/' />">
 					<img src="../resources/img/logo02.png">
 				</a>
-				<div class="progress_bar page-header">
+				<div class="progress_bar ">
 					<div class="progress_bar_inner ">
 						<p>1. 상세 정보 입력 및 동의</p>
 					</div>
@@ -161,7 +161,7 @@
 		$(function() {
 			
 			$('.prev').click(function () {
-				location.href="<c:url value='/direct/' />";
+				location.href="<c:url value='/' />";
 			})
 			
 			$('.next').click(function () {

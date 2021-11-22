@@ -11,6 +11,8 @@
 <link rel="stylesheet" href="resources/css/index.css">
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 
+
+
 </head>
 <body>
 			<!-- 헤더 -->
@@ -44,12 +46,12 @@
 													<div class="formBox3 form-group">
 														<div class="formBox3_inner">
 															<input class="form-control" type="text" id="customerNm" name="customerNm" placeholder="이름">
-														</div>
-														<div class="gender">
-															<input type="radio" name="gender" id="male" class="genderBox" value="1" checked>
-															<label class="genderlabel">남</label>
-															<input type="radio" name="gender" id="female" class="genderBox" value="2">
-															<label class="genderlabel">여</label>
+															<div class="gender">
+																<input type="radio" name="gender" id="male01" class="genderbox" value="1" checked>
+																<label class="genderlabel" for="male01">남</label>
+																<input type="radio" name="gender" id="female01" class="genderbox" value="2">
+																<label class="genderlabel" for="female01">여</label>
+															</div>
 														</div>
 													</div>
 													<div class="formGroup">
@@ -119,7 +121,20 @@
 									<li class="" id="caution">꼭알아두실사항</li>
 								</ul>
 							</div>
+							
+							<!-- 맨위가기 버튼  -->
+							<div class="goTop">
+								<div class="goTopInner">
+									<img alt="" src="resources/img/up.png">
+								</div>
+							</div>
 						</section>
+						
+
+
+
+						
+							
 						<!-- 가입,보장 내용 목차 끝 -->
 	
 						<!-- 가입안내 시작 -->
@@ -1413,15 +1428,18 @@
 			(주)DB손해보험 서울시 강남구 테헤란로 432(대치동DB금융센터)(우)06194
 			<br>
 			COPYRIGHTS 2018 DB INSURANCE.CO.LTD. ALL RIGHTS RESERVED
-		</div>
+
+			</div>
 		<!-- 푸터 끝 -->
+		
+
 		
 		<!-- 하단 버튼 -->
 		<div class="join">
 			<a href="" class="calBtn">
 				<img src="resources/img/fadein_btn01.png">
 			</a>
-			<a href="" class="conBtn">
+			<a href="<c:url value='/direct/details1' />" class="conBtn">
 				<img src="resources/img/fadein_btn02.png">
 			</a>
 		</div>
@@ -1432,6 +1450,24 @@
 <script>
 	$(function(){
 		$('#btn01').on("click", function() {
+			if($('#customerNm').val() === '') {
+				alert('이름을 입력하세요!');
+				$('#customerNm').focus();
+				return;
+			}else if($('#customerBirthDay').val() === '') {
+				alert('생년월일을 입력하세요!');
+				$('#customerBirthDay').focus();
+				return;
+			}else if($('#customerPhone').val() === '') {
+				alert('전화번호를 입력하세요!');
+				$('#customerPhone').focus();
+				return;
+			}else if($('.popup_1').css("display") == "none"){
+				$('.popup_1').show();
+			}
+		})
+		
+		$('.calBtn').on("click", function() {
 			if($('#customerNm').val() === '') {
 				alert('이름을 입력하세요!');
 				$('#customerNm').focus();
@@ -1579,6 +1615,21 @@
 			return money;
 			
 		}
+		
+			$(window).scroll(function() {
+	            if ($(this).scrollTop() > 500) {
+	                $('.goTopInner').fadeIn();
+	            } else {
+	                $('.goTopInner').fadeOut();
+	            }
+	   		});
+	    
+	        $(".goTopInner").click(function() {
+	            $('html, body').animate({
+	                scrollTop : 0
+	            }, 400);
+	            return false;
+	        });
 		
 		
 		

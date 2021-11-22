@@ -173,16 +173,20 @@
 		width: 630px;
 	}
 	.formBox3 {
-		text-align:center;
 		margin: 0 auto;
 	}
 	
 	.formBox3_inner {
+		height:80px;
 	}
 	
 	.gender {
+		position:relative;
+		top:-70px;
+		right:-210px;
 		padding-top:20px;
 	}
+
 	#customerNm {
 		padding: 10px 10px;
 		width: 560px;
@@ -273,6 +277,26 @@
 		width:720px;
 		text-align:center;
 	}
+	#pop_close img {
+		width:20px;
+		height:20px;
+	}
+	.goTop {
+		height:60px;
+	}
+	.goTopInner {
+		height:60px;
+	}
+	.goTopInner img {
+		height:60px;
+	    position: fixed;
+	    right: 2%;
+	    bottom: 100px;
+	    z-index: 999;
+	    cursor:pointer;
+
+	}
+	
 	
 	.infoTitle {padding: 5px 10px; margin-top: 15px; font-weight: bold; font-size: 14px; color: rgba(0,133,74,1);}
 	.infoList {padding: 20px 10px;}
@@ -333,8 +357,8 @@
 	.popupWrap .pop_contentWrap .btnAgree>div.agreeBox02 {margin-left: 7px;}
 	.popupWrap .pop_contentWrap .btnAgree>div input {visibility: hidden; position: absolute; left: 0; top: 0;}
 	.popupWrap .pop_contentWrap .btnAgree>div label {position: relative; padding-left: 22px;}
-	.popupWrap .pop_contentWrap .btnAgree>div label::before {position: absolute; left: 0; top: 2.5px; content: ''; width: 18px; height: 18px; background: url('resources/img/check_2.png') no-repeat; background-size: 100%;}
-	.popupWrap .pop_contentWrap .btnAgree>div input:checked ~ label::before {background: url('resources/img/check_1.png') no-repeat; background-size: 100%;}
+	.popupWrap .pop_contentWrap .btnAgree>div label::before {position: absolute; left: 0; top: 2.5px; content: ''; width: 18px; height: 18px; background: url('../../resources/img/check_2.png') no-repeat; background-size: 100%;}
+	.popupWrap .pop_contentWrap .btnAgree>div input:checked ~ label::before {background: url('../../resources/img/check_1.png') no-repeat; background-size: 100%;}
 	
 	.popup_1 {display:none; position: fixed; width:100%; height: 100%; background-color: #fff; top:0; left: 0; font-family: 'Noto Sans CJ KR'; overflow: scroll;}
 	.popup_1 .header {background-color: #007F41; width: 100%; height: 40px; margin-top: 40px;}
@@ -367,4 +391,9 @@
 	.popup_2 .pop2_btns {margin-top: 30px;}
 	.popup_2 .pop2_btns .btn{width:100%; height:50px; padding:10px 0; text-align:center; font-size:22px; color:#fff; background-color:#1ca77e; font-weight:bold;}
 	
+	.content .formBox .gender {position:absolute; top:0; right:0; height:100%;}
+	.content .formBox label {display:block; float:left; width:70px; height:100%; text-align:center; color:#ccc; line-height:63px; cursor:pointer; font-size: 16px; padding-left: 10px;}
+	.content .formBox input[type="radio"] {position:absolute; left:-9999px; width:1px; height:1px; margin:-1px; overflow:hidden; opacity:0;}
+	input[class="genderbox"] + label { background: url(../../resources/img/chk_off.gif) no-repeat 0 18px; }
+	input[class="genderbox"]:checked + label {background: url(../../resources/ img/chk_on.gif) no-repeat 0 18px; }
 	

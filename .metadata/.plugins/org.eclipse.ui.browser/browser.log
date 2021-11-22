@@ -5,3 +5,14 @@
 11월 22, 2021 08:59:57.944 [13396:18516:1122/085957.937:ERROR:chrome_browser_main_extra_parts_metrics.cc(236)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
 11월 22, 2021 08:59:57.950 [13396:18516:1122/085957.949:ERROR:chrome_browser_main_extra_parts_metrics.cc(240)] crbug.com/1216328: Checking default browser status ended.
 11월 22, 2021 08:59:58.06 [13396:5664:1122/085958.006:ERROR:device_event_log_impl.cc(214)] [08:59:58.006] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+11월 22, 2021 09:42:12.250 [13396:5664:1122/094212.248:ERROR:CONSOLE(1)] "TypeError: Cannot read properties of undefined (reading 'indexOf') TypeError: Cannot read properties of undefined (reading 'indexOf')
+11월 22, 2021 09:42:12.250     at Li.contentType (devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js:1:301350)
+11월 22, 2021 09:42:12.251     at new vt (devtools://devtools/bundled/devtools-frontend/front_end/models/bindings/bindings.js:1:60321)
+11월 22, 2021 09:42:12.251     at St.resourceAdded (devtools://devtools/bundled/devtools-frontend/front_end/models/bindings/bindings.js:1:59493)
+11월 22, 2021 09:42:12.251     at qi.dispatchEventToListeners (devtools://devtools/bundled/devtools-frontend/front_end/core/common/common.js:1:18359)
+11월 22, 2021 09:42:12.251     at _i.addRequest (devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js:1:318620)
+11월 22, 2021 09:42:12.251     at qi.onRequestFinished (devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js:1:308994)
+11월 22, 2021 09:42:12.252     at et.dispatchEventToListeners (devtools://devtools/bundled/devtools-frontend/front_end/core/common/common.js:1:18359)
+11월 22, 2021 09:42:12.252     at lt.finishNetworkRequest (devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js:1:109074)
+11월 22, 2021 09:42:12.252     at lt.loadingFinished (devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js:1:104005)
+11월 22, 2021 09:42:12.252     at c.dispatch (devtools://devtools/bundled/devtools-frontend/front_end/core/protocol_client/protocol_client.js:1:7977)", source: devtools://devtools/bundled/devtools-frontend/front_end/core/host/host.js (1)

@@ -148,6 +148,7 @@
 										<option id="shinhan" value="shinhan">신한은행</option>
 										<option id="hana" value="hana">하나은행</option>
 										<option id="kb" value="kb">kb국민은행</option>
+										<option id="nh" value="nh">농협</option>
 									</select>
 								</div>
 								<div class="bank_num">
